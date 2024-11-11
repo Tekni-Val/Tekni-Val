@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Page</title>
+    <title>Hi from Val</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        /* Make the image take up the full viewport */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover; /* Makes sure the image covers the entire area */
+        }
     </style>
 </head>
 <body>
-    <h1>Hello, I'm <Your Name>!</h1>
-    <p>Welcome to my personal GitHub Page.</p>
-    <p>This is a simple webpage hosted on GitHub Pages.</p>
-    <p>Feel free to check out my <a href="https://github.com/your-username">GitHub profile</a>!</p>
+    <img src="today_image.jpg" alt="Full-page image">
 </body>
 </html>
