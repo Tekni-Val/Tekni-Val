@@ -3,29 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi from Val</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Article Title</title>
     <style>
-        /* Make the image take up the full viewport */
-        html, body {
+        /* Basic reset and font */
+        * {
             margin: 0;
             padding: 0;
-            height: 100%;
-            overflow: hidden;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
+
+        /* Container for the article */
         body {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f9;
         }
-        img {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover; /* Makes sure the image covers the entire area */
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+        }
+
+        /* Header style */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        header h2 {
+            font-size: 1.2em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Article content */
+        article {
+            text-align: justify;
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #999;
         }
     </style>
 </head>
 <body>
-    <img src="today_image.jpg" alt="Full-page image">
+    <div class="container">
+        <header>
+            <h1>Article Title</h1>
+            <h2>Subtitle Goes Here</h2>
+        </header>
+
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, orci nec dapibus ullamcorper, augue velit cursus lectus, eget sollicitudin odio justo at nisi. Suspendisse id justo vitae orci gravida commodo.</p>
+            <p>Integer non metus a est cursus blandit. Nam eu nisl nisi. Vivamus efficitur, eros non interdum pulvinar, nibh elit lacinia ipsum, a congue urna quam ac eros. Aenean a finibus velit, a malesuada nisi.</p>
+            <p>Nulla facilisi. Aenean vitae nisi ac orci tempor varius. Phasellus sed tellus vel magna laoreet aliquet nec vel est. Curabitur scelerisque eget quam eu laoreet.</p>
+        </article>
+
+        <footer>
+            <p>&copy; 2023 Your Name or Company</p>
+        </footer>
+    </div>
 </body>
 </html>
